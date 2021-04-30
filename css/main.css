@@ -1,0 +1,786 @@
+/*
+ _____   _           _         _                        _
+|_   _| | |         | |       | |                      | |
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams.
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+}
+body {
+
+}
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+	min-width: 960px;
+	opacity: 0;
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+  /* OJO AQUIIII*/
+	/*overflow-x: hidden;*/
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../img/portada.jpg')}
+
+/* Slide 2 */
+#slide-2 .bcg {background: none; background-color: #010101; text-align: center}
+
+/* Slide 3 */
+#slide-3 .bcg {background: none; background-color: #010101; text-align: center}
+#slide-3 .bcg2 {background-image: none; background-color: #000000; position: absolute; top: 0; left: 0;}
+
+/* Slide 4 */
+/*
+.curtainContainer {width: 100%; height: 100%; position: relative;}
+.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+*/
+#slide-4 .bcg {background: none; background-color: #010101; text-align: center}
+#slide-4 .bcg2 {background-image: none; background-color: #000000; position: absolute; top: 0; left: 0;}
+
+/* Slide 5 */
+#slide-5 .bcg {background: none; background-color: #010101; text-align: center}
+/*
+#slide-5 {position: relative;}
+#slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg')}
+#slide-5 .bcg2 {background-image:url('../img/bcg_slide-5b.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
+#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
+*/
+
+/* Slide 6 */
+#slide-6 .bcg {background-image:url('../img/fondos/fondo-1.png'); text-align: center}
+
+/* Slide 6 */
+#slide-7 .bcg {background: none; background-color: #010101; text-align: center}
+
+/* Slide 8 */
+#slide-8 .bcg {background-image:url('../img/fondos/fondo-2.png'); text-align: center}
+
+
+.hsContainer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 450px;
+	margin: -150px auto 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	color: #ffffff;
+	padding: 0 8%;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+}
+
+.titulo-home h2{
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+.titulo-home h3{
+  width: 400px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 25px;
+}
+.titulo-cine h2{
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 10;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+}
+.titulo-cine h3{
+  width: 400px;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #b2b2b2;
+  position: relative;
+  z-index: 10;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+/*
+	.hsContent h2,
+	.copy h2 {
+		color: #ffffff;
+		font-size: 45px;
+		line-height: 48px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		margin: 0 auto;
+		color: #b2b2b2;
+	}
+*/
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+	.bgBlack {
+		background-color: rgba(0,0,0,0.75);
+		padding: 3px 10px;
+	}
+
+
+/* Navigation */
+#slideNav {
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -80px;
+	z-index: 11;
+}
+#slideNav ul {
+	list-style: none;
+	color: #000000;
+	font-size: 13px;
+	text-align: center;
+}
+#slideNav li {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(255,255,255,0.70);
+	margin-bottom: 1px;
+}
+.no-rgba  #slideNav li {background-color: #ffffff}
+#slideNav a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	color: #000000;
+}
+#slideNav a.disabled {
+	cursor: default;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* ::::::::::::::::::::::::::: */
+
+/* ESTIBALIZUZABEAGA.COM */
+
+.circle-1{
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  border-radius: 50%;
+  position:absolute; /*makes left effective*/
+  top:50%;
+  left:50%;
+  display:table-cell;
+  background-color: rgb(0, 0, 0);
+  z-index: 3;
+}
+
+.circle-2{
+  width: 650px;
+  height: 650px;
+  margin-left: -325px;
+  margin-top: -325px;
+  border-radius: 50%;
+  position:absolute; /*makes left effective*/
+  top:50%;
+  left:50%;
+  display:table-cell;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.circle-3{
+  width: 800px;
+  height: 800px;
+  margin-left: -400px;
+  margin-top: -400px;
+  border-radius: 50%;
+  position:absolute; /*makes left effective*/
+  top:50%;
+  left:50%;
+  display:table-cell;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* CORTOMETRAJES */
+#vacaciones{grid-area: vacaciones; background: url('../img/home/2_las_vacaciones_de_paulina.png') center no-repeat; 	background-size: cover;}
+#ciruelas{grid-area: ciruelas; background: url('../img/home/3_ciruelas_y_humo_verde.jpg') center no-repeat; background-size: cover;}
+#ellos{grid-area: ellos; background: url('../img/home/4_ellos.png') center no-repeat; background-size: cover;}
+#nunca{grid-area: nunca; background: url('../img/home/5_nunca_te_fuiste.jpg') center no-repeat; background-size: cover;}
+#trompeta{grid-area: trompeta; background: url('../img/home/6_el_chico_de_ la_trompeta.png') center no-repeat; background-size: cover;}
+#heroe{grid-area: heroe; background: url('../img/home/7_heroe.png') center no-repeat; background-size: cover;}
+#paradero{grid-area: paradero; background: url('../img/home/8_paradero_de_antonia.jpg') center no-repeat; background-size: cover;}
+/*::::::: PERROS SIN COLA :::::::::::::*/
+
+.container-perros{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#perros{background: url('../img/posters/perros-sin-cola-poster.jpg') center no-repeat; background-size: contain;}
+
+.video-screen{
+  margin: 0:
+  padding: 0;
+}
+
+.info-perros{
+  background-color: rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding-bottom: : 50px;
+  width: 80%;
+  height: 180px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info-perros{
+    width: 640px;
+  }
+}
+
+.perros-box{
+/*  height: 280px; */
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.perros-titulo{
+  flex-grow: 1;
+}
+
+/*
+.container-cortos{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 200px 200px 200px 200px;
+	cursor: pointer;
+	grid-template-areas:
+	"vacaciones ciruelas  ellos"
+  "nunca      trompeta  heroe"
+  " .         paradero  . ";
+  width: 80vw;
+  height: 90vh;
+}
+*/
+
+.cortos-items{
+  width:90%;
+  margin: auto;
+  position: absolute;
+  bottom: -200px;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  /*
+  width: 100%;
+  height: 100%;
+  */
+  width: 320px;
+  height: 180px;
+}
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(144, 15, 223, 0.7);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  height: 100%;
+  text-align:center;
+  font-size:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight:normal;
+  padding: 20px;
+}
+
+.img__description h1,h2,h3,h4 {5
+  line-height: 0.2em;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
+.container-av{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 200px 200px;
+	cursor: pointer;
+	grid-template-areas:
+  "kinerupa contagiando joya"
+	"subpop dubois verdemetrajes";
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+}
+
+#kinerupa{grid-area: kinerupa; background: url('../img/home/9_kine_rupa.png') center no-repeat; background-size: cover;}
+#contagiando{grid-area: contagiando; background: url('../img/home/10_contagiando_humanidad.png') center no-repeat; background-size: cover;}
+#joya{grid-area: joya; background: url('../img/home/11_joya_de_la_naturaleza.png') center no-repeat; background-size: cover;}
+#dubois{grid-area: dubois; background: url('../img/home/DUBOIS110.png') center no-repeat; background-size: cover;}
+#subpop{grid-area: subpop; background: url('../img/home/12_SUBPOP.JPG') center no-repeat; background-size: cover;}
+#verdemetrajes{grid-area: verdemetrajes; background: url('../img/home/verdemetraje-caturro.png') center no-repeat; background-size: cover;}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::: */
+
+.container-ae{
+	display: grid;
+	grid-template-columns: 25% 25%;
+  grid-template-rows: 200px 200px;
+	cursor: pointer;
+	grid-template-areas:
+  "agorafobia yo-queria"
+	"copito flauta";
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+}
+
+#agorafobia{grid-area: agorafobia; background: url('../img/home/Agorafobia.jpg') center no-repeat; background-size: cover;}
+#yo-queria{grid-area: yo-queria; background: url('../img/home/yo_queria_tener.jpg') center no-repeat; background-size: cover;}
+#copito{grid-area: copito; background: url('../img/home/copito-nieves.png') top no-repeat; background-size: cover;}
+#flauta{grid-area: flauta; background: url('../img/home/La_flauta_magica.jpg') center no-repeat; background-size: cover;}
+
+.tab_content {
+    transition: opacity 2s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+}
+.tab_content.tab_contents_active {
+    opacity: 1;
+    height: auto;
+    z-index: 999;
+}
+
+.screen-cortos{
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+}
+
+.info-cortos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tab_content{
+  width: 100%;
+  height: 100%;
+}
+
+
+#tab_vacaciones{background: url('../img/home/2_las_vacaciones_de_paulina.png') no-repeat center center; background-size: cover;}
+#tab_ciruelas{background: url('../img/home/3_ciruelas_y_humo_verde.jpg') no-repeat center center; background-size: cover;}
+#tab_ellos{background: url('../img/home/4_ellos.png') no-repeat center center; background-size: cover;}
+#tab_nunca{background: url('../img/home/5_nunca_te_fuiste.jpg') no-repeat center center; background-size: cover;}
+#tab_trompeta{background: url('../img/home/6_el_chico_de_ la_trompeta.png') no-repeat center center; background-size: cover;}
+#tab_heroe{background: url('../img/home/7_heroe.png') no-repeat center center; background-size: cover;}
+#tab_paradero{background: url('../img/home/8_paradero_de_antonia.jpg') no-repeat center center; background-size: cover;}
+
+.carrusel-info{
+  width:400px;
+}
+
+.carrusel-perros{
+  width:1000px;
+}
