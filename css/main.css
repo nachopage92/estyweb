@@ -163,7 +163,7 @@ main {
 .curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 */
-#slide-4 .bcg {background: none; background-color: #010101; text-align: center}
+#slide-4 .bcg {background: none; background-color: #000000;}
 #slide-4 .bcg2 {background-image: none; background-color: #000000; position: absolute; top: 0; left: 0;}
 
 /* Slide 5 */
@@ -202,9 +202,10 @@ main {
 	color: #ffffff;
 	padding: 0 8%;
 	text-align: center;
-	position: relative;
 	z-index: 10;
+	position: relative;
 }
+
 
 .titulo-home h2{
   color: #ffffff;
@@ -570,39 +571,26 @@ main {
   align-items: center;
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(0);
+  -moz-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+  /*background-color:red;*/
 }
 
 #perros{background: url('../img/posters/perros-sin-cola-poster.jpg') center no-repeat; background-size: contain;}
 
-.video-screen{
-  margin: 0:
-  padding: 0;
-}
-
-.info-perros{
-  background-color: rgba(0, 0, 0, 0.25);
-  margin: 0;
-  padding-bottom: : 50px;
-  width: 80%;
-  height: 180px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .info-perros{
-    width: 640px;
-  }
-}
-
 .perros-box{
-/*  height: 280px; */
   padding-top:20px;
   padding-bottom:20px;
   padding-left: 80px;
   padding-right: 80px;
 }
-.perros-titulo{
-  flex-grow: 1;
-}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
 
 /*
 .container-cortos{
@@ -619,12 +607,50 @@ main {
 }
 */
 
-.cortos-items{
-  width:90%;
-  margin: auto;
+
+.container-cortos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   position: absolute;
-  bottom: -200px;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(0);
+  -moz-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
+
+.provi{
+  position: absolute;
+  left:0;
+}
+
+.items-cortos{
+  z-index: 1000;
+  background-color: #000000;
+}
+
+.screen-cortos{
+  background-color: #000000;
+
+}
+
+.info-cortos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* relevant styles */
 .img__wrap {
@@ -667,6 +693,77 @@ main {
   visibility: visible;
   opacity: 1;
 }
+
+.carrusel-info{
+  width:400px;
+}
+
+.titulo-cortos{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+
+.tab_content-cortos {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    /*
+    position: absolute;
+    left: 0;
+    */
+    z-index: 100;
+}
+.tab_content-cortos.tab_contents_active {
+    opacity: 1;
+    height: auto;
+    z-index: 999;
+}
+
+.tab_content-av {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    /*
+    position: absolute;
+    left: 0;
+    */
+    z-index: 100;
+}
+.tab_content-av.tab_contents_active {
+    opacity: 1;
+    height: auto;
+    z-index: 999;
+}
+
+.tab_content-ae {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    /*
+    position: absolute;
+    left: 0;
+    */
+    z-index: 100;
+}
+.tab_content-ae.tab_contents_active {
+    opacity: 1;
+    height: auto;
+    z-index: 999;
+}
+
+
+
+/*
+.tab_content{
+  width: 100%;
+  height: 100%;
+}
+*/
 
 
 
@@ -728,46 +825,6 @@ main {
 #copito{grid-area: copito; background: url('../img/home/copito-nieves.png') top no-repeat; background-size: cover;}
 #flauta{grid-area: flauta; background: url('../img/home/La_flauta_magica.jpg') center no-repeat; background-size: cover;}
 
-.tab_content {
-    transition: opacity 2s ease-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    z-index: 100;
-}
-.tab_content.tab_contents_active {
-    opacity: 1;
-    height: auto;
-    z-index: 999;
-}
-
-.screen-cortos{
-  background-color: #000000;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100px;
-}
-
-.info-cortos{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.tab_content{
-  width: 100%;
-  height: 100%;
-}
-
 
 #tab_vacaciones{background: url('../img/home/2_las_vacaciones_de_paulina.png') no-repeat center center; background-size: cover;}
 #tab_ciruelas{background: url('../img/home/3_ciruelas_y_humo_verde.jpg') no-repeat center center; background-size: cover;}
@@ -776,11 +833,3 @@ main {
 #tab_trompeta{background: url('../img/home/6_el_chico_de_ la_trompeta.png') no-repeat center center; background-size: cover;}
 #tab_heroe{background: url('../img/home/7_heroe.png') no-repeat center center; background-size: cover;}
 #tab_paradero{background: url('../img/home/8_paradero_de_antonia.jpg') no-repeat center center; background-size: cover;}
-
-.carrusel-info{
-  width:400px;
-}
-
-.carrusel-perros{
-  width:1000px;
-}

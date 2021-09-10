@@ -2,7 +2,7 @@
 
 // perros sin cola
 
-var perros_resumen = "<h1>Perros Sin Cola</h1><h2>Dirección de Arte</h2><h3>Largometraje, Drama / Ficción</h3><h3>Dirigido por Carolina Quezada</h3><h4>Antofagasta - Chile</h4><h4>2019</h4><h4>Duración: 80 min.</h4>"
+var perros_resumen = "<h2>Perros Sin Cola</h2><p>Dirección de Arte<br>Largometraje, Drama / Ficción<br>Dirigido por Carolina Quezada<br>Antofagasta - Chile<br>2019<br>Duración: 80 min.</p>"
 var perros_sinopsis = "<p>La adolescente y errante Rosario cree que Paty, su madre, no la quiere y aparentemente tiene razón. La joven ha encontrado refugio en el baile y en su amigo Jonathan, un joven vendedor ambulante a quien ayuda a reunir dinero para el matrimonio de su hermana Jenny, el silencioso y platónico amor de Rosario. El día de la fiesta el jolgorio y los excesos dan pie a una catarsis colectiva en la que Rosario no logra dar un vuelco a su destino familiar.</p>";
 var perros_awards="<p>"+
 	"(SELECCIÓN) 6° Festival Internacional de Cine de La Serena, Fecils 2020.<br>"+
@@ -257,50 +257,46 @@ document.getElementById("dubois-enlaces").innerHTML  = dubois_enlaces;
 
 // ------------------------ ARTES ESCENICAS --------------------------------------------
 
-//var agorafobia = "El cuatro de septiembre de 1993 las llamas acabaron con la Discoteca Gay 'Divine'. Se dice que cerca de una veintena de personas murieron, pero las cifras aún son difusas. Tras una exhaustiva investigación, Teatro a la Deriva presenta 'Agorafobia', una ficción inspirada en el incendio de la Discoteque Divine. Enmarcada dentro del subgénero Teatro Documental, la obra expone la tragedia para flexionar sobre el ayer y el contexto actual de la diversidad en Chile";
-//var agorafobia_tercer_montaje = ""+
-//"<span class='cargo'>Año                             </span><span class='nombre'>2018               </span>"+
-//"<span class='cargo'>País                            </span><span class='nombre'>CHILE              </span>"+
-//"<span class='cargo'>Teatro                          </span><span class='nombre'>CENTRO CULTURAL QUILLOTA,TEATRO MUNICIPAL DE QUILPUÉ, TEATRO SAN JOAQUÍN, TEATRO CASABLANCA</span>"+
-//"<span class='cargo'>Compañía                        </span><span class='nombre'>TEATRO A LA DERIVA </span>"+
-//"<span class='cargo'>Producción                      </span><span class='nombre'>CAMILA GARRIDO     </span>"+
-//"<span class='cargo'>Dirección y dramaturgia         </span><span class='nombre'>SEBASTIÁN AYALA    </span>"+
-//"<span class='cargo'>Diseño Integral                 </span><span class='nombre'>ESTÍBALIZ UZABEAGA </span>"+
-//"<span class='cargo'>Construcción escenografía       </span><span class='nombre'>HUGO UZABEAGA      </span>"+
-//"<span class='cargo'>Confección de vestuario         </span><span class='nombre'>SEBASTIÁN VEGA     </span>"+
-//"<span class='cargo'>IIluminación                    </span><span class='nombre'>ESTÍBALIZ UZABEAGA </span>"+
-//"<span class='cargo'>Diseño gráfico                  </span><span class='nombre'>MAURO MORENO       </span>"+
-//"<span class='cargo'>Elenco                          </span><span class='nombre'>SEBASTIÁN AYALA, ESTEFANÍA VILLALOBOS, ROBYNSON BURGOS, MARÍA FRANCISCA PRIETO</span>";
-//
-//var agorafobia_segundo_montaje = ""+
-//"<span class='cargo'>Año                         </span><span class='nombre'>2016                                 </span>"+
-//"<span class='cargo'>País                        </span><span class='nombre'>CHILE                                 </span>"+
-//"<span class='cargo'>Teatro PCDV                 </span><span class='nombre'>                                     </span>"+
-//"<span class='cargo'>Compañía                    </span><span class='nombre'>TEATRO A LA DERIVA                   </span>"+
-//"<span class='cargo'>Producción                  </span><span class='nombre'>CAMILA GARRIDO                       </span>"+
-//"<span class='cargo'>Dirección y dramaturgía     </span><span class='nombre'>SEBASTIÁN AYALA                       </span>"+
-//"<span class='cargo'>Diseño Integral             </span><span class='nombre'>ESTÍBALIZ UZABEAGA, MAURO MORENO     </span>"+
-//"<span class='cargo'>Construcción escenografía   </span><span class='nombre'>JOSE ROJAS                           </span>"+
-//"<span class='cargo'>Diseño de vestuario         </span><span class='nombre'>JAVIERA RODRIGUEZ                     </span>"+
-//"<span class='cargo'>Iluminación                 </span><span class='nombre'>ESTÍBALIZ UZABEAGA                   </span>"+
-//"<span class='cargo'>Diseño gráfico              </span><span class='nombre'>MAURO MORENO                         </span>"+
-//"<span class='cargo'>Elenco                      </span><span class='nombre'>SEBASTIÁN AYALA, ESTEFANÍA VILLALOBOS, ROBYNSON BURGOS, MARÍA FRANCISCA PRIETO </span>";
-//
-//var agorafobia_primer_montaje = ""+
-//"<span class='cargo'>Año                          </span><span class='nombre'>2015                                 </span>"+
-//"<span class='cargo'>País                         </span><span class='nombre'>CHILE                               </span>"+
-//"<span class='cargo'>Compañía                     </span><span class='nombre'>Teatro a la deriva                   </span>"+
-//"<span class='cargo'>Producción                   </span><span class='nombre'>Maceteros Producciones, Sala Escénica UPLA   </span>"+
-//"<span class='cargo'>Dirección y dramaturgia      </span><span class='nombre'>SEBASTIÁN AYALA                     </span>"+
-//"<span class='cargo'>Asistente de dirección       </span><span class='nombre'>GONZALO DE LA JARA                   </span>"+
-//"<span class='cargo'>Diseño integral              </span><span class='nombre'>ESTÍBALIZ UZABEAGA                   </span>"+
-//"<span class='cargo'>Construcción escenografía    </span><span class='nombre'>JOSE NORIEGA                         </span>"+
-//"<span class='cargo'>Confección de vestuario      </span><span class='nombre'>JAVIERA RODRÍGUEZ                   </span>"+
-//"<span class='cargo'>Diseño gráfico               </span><span class='nombre'>VERÓNICA GARAY                       </span>"+
-//"<span class='cargo'>Elenco                       </span><span class='nombre'>ESTEFANÍA VILLALOBOS , ROBYNSON BURGOS, MARÍA FRANCISCA PRIETO, JIMMY VALENZUELA</span>";
-//
-//document.getElementById("agorafobia-sinopsis").innerHTML = agorafobia;
-//document.getElementById("agorafobia-3er-montaje").innerHTML = agorafobia_tercer_montaje;
-//document.getElementById("agorafobia-2do-montaje").innerHTML = agorafobia_segundo_montaje;
-//document.getElementById("agorafobia-1er-montaje").innerHTML = agorafobia_primer_montaje;
-//
+var agorafobia_sinopsis = "<p>El cuatro de septiembre de 1993 las llamas acabaron con la Discoteca Gay 'Divine'. Se dice que cerca de una veintena de personas murieron, pero las cifras aún son difusas. Tras una exhaustiva investigación, Teatro a la Deriva presenta 'Agorafobia', una ficción inspirada en el incendio de la Discoteque Divine. Enmarcada dentro del subgénero Teatro Documental, la obra expone la tragedia para flexionar sobre el ayer y el contexto actual de la diversidad en Chile</p>";
+var agorafobia_tercer_montaje = "<p>"+
+"<span class='cargo'>Año                             </span><span class='nombre'>2018               </span>"+
+"<span class='cargo'>País                            </span><span class='nombre'>CHILE              </span>"+
+"<span class='cargo'>Teatro                          </span><span class='nombre'>CENTRO CULTURAL QUILLOTA,TEATRO MUNICIPAL DE QUILPUÉ, TEATRO SAN JOAQUÍN, TEATRO CASABLANCA</span>"+
+"<span class='cargo'>Compañía                        </span><span class='nombre'>TEATRO A LA DERIVA </span>"+
+"<span class='cargo'>Producción                      </span><span class='nombre'>CAMILA GARRIDO     </span>"+
+"<span class='cargo'>Dirección y dramaturgia         </span><span class='nombre'>SEBASTIÁN AYALA    </span>"+
+"<span class='cargo'>Diseño Integral                 </span><span class='nombre'>ESTÍBALIZ UZABEAGA </span>"+
+"<span class='cargo'>Construcción escenografía       </span><span class='nombre'>HUGO UZABEAGA      </span>"+
+"<span class='cargo'>Confección de vestuario         </span><span class='nombre'>SEBASTIÁN VEGA     </span>"+
+"<span class='cargo'>IIluminación                    </span><span class='nombre'>ESTÍBALIZ UZABEAGA </span>"+
+"<span class='cargo'>Diseño gráfico                  </span><span class='nombre'>MAURO MORENO       </span>"+
+"<span class='cargo'>Elenco                          </span><span class='nombre'>SEBASTIÁN AYALA, ESTEFANÍA VILLALOBOS, ROBYNSON BURGOS, MARÍA FRANCISCA PRIETO</span></p>";
+var agorafobia_segundo_montaje = "<p>"+
+"<span class='cargo'>Año                         </span><span class='nombre'>2016                                 </span>"+
+"<span class='cargo'>País                        </span><span class='nombre'>CHILE                                 </span>"+
+"<span class='cargo'>Teatro PCDV                 </span><span class='nombre'>                                     </span>"+
+"<span class='cargo'>Compañía                    </span><span class='nombre'>TEATRO A LA DERIVA                   </span>"+
+"<span class='cargo'>Producción                  </span><span class='nombre'>CAMILA GARRIDO                       </span>"+
+"<span class='cargo'>Dirección y dramaturgía     </span><span class='nombre'>SEBASTIÁN AYALA                       </span>"+
+"<span class='cargo'>Diseño Integral             </span><span class='nombre'>ESTÍBALIZ UZABEAGA, MAURO MORENO     </span>"+
+"<span class='cargo'>Construcción escenografía   </span><span class='nombre'>JOSE ROJAS                           </span>"+
+"<span class='cargo'>Diseño de vestuario         </span><span class='nombre'>JAVIERA RODRIGUEZ                     </span>"+
+"<span class='cargo'>Iluminación                 </span><span class='nombre'>ESTÍBALIZ UZABEAGA                   </span>"+
+"<span class='cargo'>Diseño gráfico              </span><span class='nombre'>MAURO MORENO                         </span>"+
+"<span class='cargo'>Elenco                      </span><span class='nombre'>SEBASTIÁN AYALA, ESTEFANÍA VILLALOBOS, ROBYNSON BURGOS, MARÍA FRANCISCA PRIETO </span></p>";
+var agorafobia_primer_montaje = "<p>"+
+"<span class='cargo'>Año                          </span><span class='nombre'>2015                                 </span>"+
+"<span class='cargo'>País                         </span><span class='nombre'>CHILE                               </span>"+
+"<span class='cargo'>Compañía                     </span><span class='nombre'>Teatro a la deriva                   </span>"+
+"<span class='cargo'>Producción                   </span><span class='nombre'>Maceteros Producciones, Sala Escénica UPLA   </span>"+
+"<span class='cargo'>Dirección y dramaturgia      </span><span class='nombre'>SEBASTIÁN AYALA                     </span>"+
+"<span class='cargo'>Asistente de dirección       </span><span class='nombre'>GONZALO DE LA JARA                   </span>"+
+"<span class='cargo'>Diseño integral              </span><span class='nombre'>ESTÍBALIZ UZABEAGA                   </span>"+
+"<span class='cargo'>Construcción escenografía    </span><span class='nombre'>JOSE NORIEGA                         </span>"+
+"<span class='cargo'>Confección de vestuario      </span><span class='nombre'>JAVIERA RODRÍGUEZ                   </span>"+
+"<span class='cargo'>Diseño gráfico               </span><span class='nombre'>VERÓNICA GARAY                       </span>"+
+"<span class='cargo'>Elenco                       </span><span class='nombre'>ESTEFANÍA VILLALOBOS , ROBYNSON BURGOS, MARÍA FRANCISCA PRIETO, JIMMY VALENZUELA</span></p>";
+document.getElementById("agorafobia-sinopsis").innerHTML    = agorafobia_sinopsis;
+document.getElementById("agorafobia-tercer-montaje").innerHTML  = agorafobia_tercer_montaje;
+document.getElementById("agorafobia-segundo-montaje").innerHTML = agorafobia_segundo_montaje;
+document.getElementById("agorafobia-primer-montaje").innerHTML  = agorafobia_primer_montaje;

@@ -60,10 +60,10 @@
 
 	    // Resize our slides
 	    $slide.height(winH);
-	    $slideTall.height(winH*1.2);
+	    $slideTall.height(winH*1.5);
       $( window ).resize( function() {
         winH = $window.height();
-        $slideTall.height(winH*1.2);
+        $slideTall.height(winH*1.5);
       });
 	    $slideTall2.height(winH*3);
 
